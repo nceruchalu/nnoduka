@@ -1,0 +1,144 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _home.scss
+//
+// Use this partial to style the home page
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.header--home {
+    background-color: #34363f;
+    background-image: linear-gradient(45deg, #34363f 0%, #262830 100%);
+    padding: 100px 0;
+}
+
+.header--home .content,
+.skills--home .content,
+.projects--home .content,
+.footer--home .content {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.header--home .content h2,
+.skills--home .content h2,
+.projects--home .content h2 {
+    color: $color-gray;
+    font-size: $fontSize-smaller;
+    font-weight: $fontWeight-normal;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header--home .content p {
+    color: rgba(255,255,255,0.75);
+    font-size: $fontSize-larger;
+    font-weight: $fontWeight-medium;
+    line-height: $lineHeight-loose;
+}
+
+.header--home .content .highlight {
+    color: #ffffff;
+}
+
+.header--home .content a {
+    background-color: rgba(87, 174, 244, 0.15);
+    border-bottom: 1px solid #818298;
+    color: inherit;
+    padding: 0 5px 2px;
+    text-decoration: none;
+}
+
+.header--home .content a:hover {
+    background-color: rgba(87, 174, 244, 0.45);
+}
+
+.skills--home,
+.footer--home {
+    background-color: #f5f5f5;
+    color: $color-gray;
+    padding: 40px 0;
+}
+
+.skills--home .btn {
+    background-color: #e3e3e3;
+    color: $color-grayDark;
+    font-size: 15px;
+    padding: 4px 15px;
+}
+
+.skills--home .btn:hover,
+.skills--home .btn.is-active {
+    background-color: rgba(87, 174, 244, 0.45);
+}
+
+
+.projects--home {
+    padding: 60px 0;
+}
+.projects--home .content {
+    background-color: #ffffff;
+}
+
+.projects--home .content h2 .btn {
+    font-size: inherit;
+    padding: 0;
+}
+
+.projects--home .project + .project {
+    margin-top: 40px;
+}
+
+.projects--home .project-title {
+    font-size: 20px;
+    font-weight: $fontWeight-bold;
+}
+
+.projects--home .project-year {
+    color: $color-grayLight;
+    font-size: $fontSize-base;
+    font-weight: $fontWeight-medium;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.projects--home .project-description {
+    color: $color-grayDark;
+    margin-bottom: 10px;
+}
+
+.projects--home .project .btn {
+    font-size: $fontSize-smaller;
+    letter-spacing: 1px;
+    padding: 4px 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width:767px) {
+    .header--home {
+        padding: 60px 0;
+    }
+    
+    .header--home .content p {
+        font-size: $fontSize-large;
+    }
+
+    .skills--home,
+    .footer--home {
+        padding: 30px 0;
+    }
+
+    .projects--home {
+        padding: 40px 0;
+    }
+    
+    .projects--home .project-title {
+        font-size: 15px;
+    }
+
+    .projects--home .project-year  {
+        font-size: $fontSize-smaller;
+    }
+}
+

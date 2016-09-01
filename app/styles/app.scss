@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// app.scss
+//
+// In this file you should write your main styles. (or centralize your imports)
+//
+////////////////////////////////////////////////////////////////////////////////
+
+@import "base";
+@import "mixins/buttons";
+@import "variables";
+@import "fonts";
+@import "utilities";
+@import "zindex";
+@import "buttons";
+@import "navigation";
+@import "error";
+@import "home";
+@import "project";
+
+body {
+    color: $color-black;
+    font-family: $fontFamily-mono;
+    font-weight: $fontWeight-normal;
+    font-size: $fontSize-base;
+    line-height: $lineHeight-base;
+}
+
+a {
+    color: $color-blue;
+}
+
+a:hover {
+    color: $color-blueDark;
+}
+

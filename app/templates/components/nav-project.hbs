@@ -1,0 +1,42 @@
+<div class="container">
+  {{#link-to "home.index"}}
+    <div class="project-index">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+           viewBox="0 0 25 25" enable-background="new 0 0 25 25"
+           xml:space="preserve" width="25" height="25">
+	<line class="svg-horizontal" fill="none" stroke="#ffffff" 
+              x1="0" y1="12.5" x2="25" y2="12.5"></line>
+	<line class="svg-vertical" fill="none" stroke="#ffffff"
+              x1="12.5" y1="0" x2="12.5" y2="25"></line>
+	<line class="svg-top" fill="none" stroke="#ffffff" 
+              x1="0" y1="20.5" x2="25" y2="20.5"></line>
+	<line class="svg-bottom" fill="none" stroke="#ffffff" 
+              x1="0" y1="4.5" x2="25" y2="4.5"></line>
+      </svg>
+    </div> <!-- /.project-index -->
+  {{/link-to}}
+  
+  <div class="project-details">
+    <div class="project-title">
+      <span class="project-attr--meta">{{titleMeta}}</span>
+      <p class="project-attr--text">{{project.title}}</p>
+    </div> <!-- /.project-title -->
+    
+    <div class="project-type">
+      <span class="project-attr--meta">Type</span>
+      <p class="project-attr--text">{{project.type}}</p>
+    </div> <!-- /.project-type -->
+    
+    <div class="project-year">
+      <span class="project-attr--meta">Year</span>
+      <p class="project-attr--text">{{project.year}}</p>
+    </div> <!-- /.project-year -->
+    
+    <div class="project-snippet">
+      <span class="project-attr--meta">Snippet</span>
+      <p class="project-attr--text">{{project.snippet}}</p>
+    </div> <!-- /.project-snippet -->
+    
+  </div> <!-- /.project-details -->
+</div> <!-- /.container -->

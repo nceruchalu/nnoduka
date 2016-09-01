@@ -1,0 +1,52 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _variables.scss
+//
+// Use this partial to setup variables used by the project
+//
+////////////////////////////////////////////////////////////////////////////////
+
+$borderRadius-base:          4px !default;
+$borderRadius-large:         5px !default;
+$borderRadius-small:         2px !default;
+
+$color-black:                #333333;
+$color-blue:                 #0b61a8;
+$color-blueDark:             darken($color-blue, 15%);
+$color-blueLight:            #6fb9f6;
+$color-gray:                 #737373;
+$color-grayDark:             #47525d;
+$color-grayLight:            lighten($color-gray, 20%);
+$color-grayLighter:          lighten($color-grayLight, 10%);
+
+$fontFamily-mono:            Consolas, Courier, monospace;
+
+$fontWeight-normal:          400;
+$fontWeight-medium:          500;
+$fontWeight-bold:            700;
+
+$fontSize-smaller:           12px;
+$fontSize-small:             13px;
+$fontSize-base:              14px;
+$fontSize-large:             17px;
+$fontSize-larger:            21px;
+$fontSize-small--header:     11px;
+$fontSize-base--header:      12px;
+
+$height-nav:                 75px;
+
+$lineHeight-tight:           1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$lineHeight-base:            1.42857143 !default;
+$lineHeight-loose:           1.5 !default;
+$lineHeight-looser:          1.7 !default;
+
+$padding-base--vertical:     6px !default;
+$padding-base--horizontal:   12px !default;
+$padding-large--vertical:    10px !default;
+$padding-large--horizontal:  16px !default;
+$padding-small--vertical:    5px !default;
+$padding-small--horizontal:  10px !default;
+$padding-xs--vertical:       1px !default;
+$padding-xs--horizontal:     5px !default;
+
+$transitionTimingFunction-cubicBezier: cubic-bezier(0.455, 0.03, 0.515, 0.955); 

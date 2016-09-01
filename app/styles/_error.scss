@@ -1,0 +1,134 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _error.scss
+//
+// Use this partial to style the error pages and content
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.container--error {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.errorPage {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 0 35px;  
+}
+
+.errorPage-details {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+.errorPage-details a {
+    color: $color-blue;
+    text-decoration: none;
+}
+
+.errorPage-details a:hover,
+.errorPage-details a:hover {
+    border-bottom: 1px dotted $color-blue;
+}
+
+.errorPage-icon {
+    @include transform-style(preserve-3d);
+    background-color:#d6d6d6;    
+    color: #fff;
+    display: inline-block;
+    font-weight: $fontWeight-bold;
+    font-size: 32px;
+    height: 118px;
+    margin: 0 30px 0 0;
+    width: 118px;
+    vertical-align: middle;
+}
+
+.errorPage-code {
+    @include transform(translateY(-50%));
+    position: absolute;    
+    right: 10%;
+    top: 50%;
+}
+
+.errorPage-content {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.errorPage-message {
+    color: $color-black;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: $fontWeight-bold;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    text-rendering: optimizeLegibility;
+}
+
+.errorPage-message--small {
+    color: $color-gray;
+    font-size: 18px;
+    font-weight: $fontWeight-medium;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+@media (max-width:767px) {
+    .errorPage-icon {
+        display: block;
+        height: 100px;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 100px;
+    }
+    .errorPage-content {
+        display: block;
+    }
+    .errorPage-icon:before {
+        font-size: 60px;
+    }
+    .errorPage-message {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .errorPage-message--small {
+        font-size: 18px;
+    }
+}
+
+
+// Customizations to navigation bar
+.navbar--error {
+    background: transparent;
+    height: 65px;
+}
+
+.navbar--error .navbar-logo {
+    @include background-size(40px 40px);
+    background-image: url(/assets/img/logo-small.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 40px;
+    margin: 10px 0 0 1px;
+    width: 40px;
+    z-index: $zIndex-7;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.1), (min-resolution: 192dpx), (min-resolution: 1.1dppx) {
+    .navbar--error .navbar-logo {
+        background-image: url(/assets/img/logo-small@2x.png);
+    }
+}

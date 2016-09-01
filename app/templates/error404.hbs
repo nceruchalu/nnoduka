@@ -1,0 +1,28 @@
+<nav class="navbar navbar--error navbar-fixed-top">
+  <div class="container-fluid">
+    {{link-to "" "home" class="navbar-logo"}}
+  </div>
+</nav> <!-- .navbar -->
+
+<div class="container-fluid container--error">
+  
+  <div class="errorPage">
+    <div class="errorPage-details">
+      
+      <div class="errorPage-icon">
+        <span class="errorPage-code">404</span>
+      </div> <!-- /.errorPage-icon -->
+      
+      <div class="errorPage-content">
+        <h2 class="errorPage-message">Sorry, but nothing exists here.</h2>
+        
+        <p class="errorPage-message errorPage-message--small">
+          You've taken a wrong turn, but you can 
+          {{#link-to "home"}}get back on track{{/link-to}}.
+        </p>
+      </div> <!-- /.errorPage-content -->
+      
+    </div> <!-- /.errorPage-details -->
+  </div> <!-- /.errorPage -->
+
+</div> <!-- /.container-fluid -->

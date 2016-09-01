@@ -1,0 +1,140 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _project.scss
+//
+// Use this partial to style the project pages
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Style the project contents container
+// ------------------------------------------------------
+.container--project {
+    padding: 100px 15px 30px;
+    position: relative;
+}
+
+.container--project .info,
+.container--project .details {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.container--project .details {
+    margin-top: 20px;
+}
+
+.container--project [data-hint] {
+    position: relative;
+}
+
+.container--project [data-hint]:after {
+    font-size: $fontSize-smaller;
+    max-width: 90%;
+    padding: 5px 10px;
+    text-align: left;
+    white-space: pre-wrap; // To allow for use of HTML newline character &#10;
+    width: 450px;
+}
+
+.container--project h1,
+.container--project h2,
+.container--project h3,
+.container--project h4,
+.container--project h5,
+.container--project h6 {
+    color: $color-gray;
+    font-size: $fontSize-base--header;
+    font-weight: $fontWeight-bold;
+    line-height: $fontSize-base--header;
+    margin-bottom: 9px;
+    margin-top: 23px;
+    text-transform: uppercase;
+}
+
+.container--project em {
+    font-style: italic;
+}
+
+.container--project ul,
+.container--project ol {
+    list-style: initial;
+}
+
+.container--project p,
+.container--project ul {
+    font-size: $fontSize-base;
+    line-height: 23px;
+    margin-bottom: 23px;
+}
+
+.container--project img {
+    @include box-sizing(border-box);
+    display: block;
+    height: auto;
+    margin: 40px 2.5% 23px;
+    padding: 0;
+    width: 95%;
+}
+
+.container--project .details img {
+    margin: 0 auto 30px;
+    width: 100%;
+}
+
+.container--project .embed-responsive-item {
+    border: 1px solid #d3d3d3;
+    border-left: 0;
+    border-top: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.container--project .info-col {
+    @include box-sizing(border-box);
+    display: inline-block;
+    float: left;
+    margin-bottom: 25px;
+    min-height: 50px;
+    padding: 0;
+    vertical-align: top;
+    width: 33.3333333333%;
+}
+
+.container--project .info-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:1199px) {
+    // The assumption is that every info block has 1 `.info-col--links`
+    // block of its 3 `.info-col` blocks
+    .container--project .info-col {
+        width: 37.5%;
+    }
+    
+    .container--project .info-col--links {
+        width: 25%;
+    }
+}
+
+@media (max-width:767px) {
+    .container--project {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width:479px) {
+    .container--project .info-col {
+        float: none;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .container--project .info-col--spacer {
+        display: none;
+    }
+}

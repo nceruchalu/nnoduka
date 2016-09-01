@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+    content must come *after* these tags -->
+
+    <title>Nnoduka</title>
+    <meta name="description" content="Nnoduka Eruchalu builds things.">
+    <meta name="author" content="Nnoduka Eruchalu">
+    
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="Nnoduka Eruchalu">
+    <meta property="og:site_name" content="Nnoduka">
+    <meta property="og:url" content="http://nnoduka.com">
+    <meta property="og:image"
+          content="{{rootURL}}assets/img/logo-large-with-bg.png">
+    <meta property="og:description" content="Nnoduka Eruchalu builds things.">
+    
+    {{content-for "head"}}
+
+    <!-- Favicons [Generated at http://realfavicongenerator.net]
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="{{rootURL}}assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="{{rootURL}}assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="{{rootURL}}assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{rootURL}}assets/img/favicon/manifest.json">
+    <link rel="mask-icon" color="#0e7dd8"
+          href="{{rootURL}}assets/img/favicon/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/nnoduka.css">
+
+    <!-- IE support
+    ================================================== -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+    queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+    </script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+    </script>
+    <![endif]-->
+
+    {{content-for "head-footer"}}
+  </head>
+  
+  <body>
+    {{content-for "body"}}
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Google analytics -->
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+     ga('create', 'UA-69231179-1', 'auto');
+     ga('send', 'pageview');
+    </script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/nnoduka.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>

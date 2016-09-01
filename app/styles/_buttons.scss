@@ -1,0 +1,96 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _buttons.scss
+//
+// Use this partial to style the button classes
+//
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Bootstrap buttons customizations
+ */
+.btn {
+    @include border-radius($borderRadius-small);
+    background: transparent;
+    color: $color-blue;
+    font-size: $fontSize-base;
+    font-weight: $fontWeight-normal;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus {
+    outline: none;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: $color-blueDark;
+}
+
+.btn.active, 
+.btn:active {
+    @include box-shadow(none);    
+}
+
+
+/**
+ * Custom button variants
+ */
+.btn--bordered {
+    @include border-radius($borderRadius-base);
+    border: 1px solid $color-blue;
+    font-size: $fontSize-base;
+    font-weight: $fontWeight-bold;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+.btn--bordered:hover {
+    border-color: $color-blueDark;
+    color: $color-blueDark;
+}
+
+.btn--link:hover {
+    text-decoration: underline;
+}
+
+
+.btn--primary {
+    @include button-variant(#fff, $color-blueLight, darken($color-blueLight, 5%));   
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+.btn--lg {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($padding-large--vertical, 
+                         $padding-large--horizontal, 
+                         $fontSize-large, 
+                         $lineHeight-tight,
+                         $borderRadius-large);
+    font-weight: $fontWeight-bold;
+}
+.btn--sm {
+    // line-height: ensure proper height of button next to small input
+    @include button-size($padding-small--vertical, 
+                         $padding-small--horizontal, 
+                         $fontSize-smaller,
+                         $lineHeight-loose, 
+                         $borderRadius-small);
+}
+.btn--xs {
+    @include button-size($padding-xs--vertical, 
+                         $padding-xs--horizontal, 
+                         $fontSize-smaller, 
+                         $lineHeight-loose, 
+                         $borderRadius-small);
+}

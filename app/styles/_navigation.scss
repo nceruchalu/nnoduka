@@ -1,0 +1,246 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _navigation.scss
+//
+// Use this partial to style the navigation bars and footers
+//
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Bootstrap navigation bar customizations
+ */
+.nav>li>a:focus, 
+.nav>li>a:hover {
+    background: none;
+}
+
+.navbar-nav>li>a {
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+/**
+ * Navbar defaults
+ */
+.navbar {
+    background: #fff;
+    height: $height-nav;
+    margin-bottom: 0;
+}
+
+.footer {
+    @include box-sizing(border-box);
+    background-color: #fff;
+    display:block;
+    width: 100%;
+}
+
+/**
+ * Project navigation
+ */
+.navbar--project {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100px;
+    margin: 0 auto;
+    z-index: $zIndex-9;
+}
+
+.navbar--project .container > a {
+    display: block;
+}
+
+// Style the project index indicator
+// ------------------------------------------------------
+.navbar--project .project-index {
+    @include box-sizing(border-box);
+    display: inline;
+    float: left;
+    padding: 24px 10px 25px;
+    width: 8.3333333333%;
+}
+
+.navbar--project .project-index svg {
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+.navbar--project svg line {
+    stroke: $color-black;
+}
+
+.navbar--project .project-index .svg-bottom,
+.navbar--project .project-index .svg-top {
+    @include opacity(1);
+    @include transform(translate3d(0, 0, 0));
+    @include transition(transform 200ms $transitionTimingFunction-cubicBezier);
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 0;
+}
+
+/**
+ * Style the animations when the index is in an anchor element
+ */
+.navbar--project a:hover .project-index .svg-bottom {
+    @include transform(translate3d(0, -2px, 0));
+}
+
+.navbar--project a:hover .project-index .svg-top {
+    @include transform(translate3d(0, 2px, 0));
+}
+
+.navbar--project .project-index .svg-vertical {
+    @include opacity(0);
+} 
+
+// Style the project details
+// ------------------------------------------------------
+.navbar--project .project-details {
+    border-bottom: 0;
+    display: inline;
+    float: left;
+    padding: 0;
+    width: 91.6666666667%;
+}
+
+.navbar--project .project-title,
+.navbar--project .project-type,
+.navbar--project .project-year,
+.navbar--project .project-snippet {
+    @include box-sizing(border-box);
+    color: $color-black;
+    display: inline;
+    float: left;
+    padding: 0 10px;
+    width: 18.1818181818%;
+}
+
+.navbar--project .project-title {
+    // No need for a padding on the first column in the project item details
+    padding-left: 0;
+    // Give the title some more room
+    width: 30.2727272727%;
+}
+
+.navbar--project .project-type {
+    // We need some distance between project type and title
+    margin-left: 15.1818181818%;
+}
+
+.navbar--project .project-snippet {
+    // No need for a padding on the last column in the project item details
+    padding-right: 0;
+}
+
+.navbar--project .project-attr--meta {
+    border-top: 0;
+    color: $color-grayLight;
+    display: block;
+    font-size: $fontSize-small--header;
+    line-height: $fontSize-small--header;
+    padding-top: 20px;
+}
+
+.navbar--project .project-attr--text {
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 6px 0 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width:767px) {
+    .navbar--project {
+        height: 75px;
+    }
+        
+    .navbar--project .project-index {
+        padding: 0 10px;
+        width: 50px;
+    }
+    
+    .navbar--project .project-index svg {
+        height: 19px;
+        width: 19px;
+        margin: 29px 0;
+    }
+    
+    .navbar--project .project-details {
+        @include transition(border 300ms 0 ease-in-out);
+        padding: 0;
+        width: auto;
+    }
+    
+    .navbar--project .project-title,
+    .navbar--project .project-type,
+    .navbar--project .project-year,
+    .navbar--project .project-snippet {
+        display: none;
+        float: left;
+    }
+
+    .navbar--project .project-title {
+        @include box-sizing(border-box);
+        display: inline;
+        float: left;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+/**
+ * Project page footer
+ */
+.footer--project {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: auto;
+    z-index: $zIndex-8;
+}
+
+.footer--project .footer-name {
+    @include box-sizing(border-box);
+    display: block;
+    float: left;
+    padding: 30px 10px 30px 10px;
+}
+
+.footer--project .footer-social {
+    @include box-sizing(border-box);
+    display: inline;
+    float: right;
+    padding: 0 10px;
+}
+
+.footer--project .footer-social a {
+    @include box-sizing(border-box);
+    display: block;
+    float: left;
+    padding: 30px 0  30px 20px;
+    text-align: center;
+}
+
+
+@media (max-width:767px) {
+    .footer--project {
+        font-size: $fontSize-small;
+        line-height: $lineHeight-looser;
+    }
+    
+    .footer--project .footer-name {
+        margin: 15px 0 10px;
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer--project .footer-social {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .footer--project .footer-social a {
+        padding: 5px 0;
+        width: 50%;
+    }
+}
+
