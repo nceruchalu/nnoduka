@@ -44,7 +44,7 @@
 
 .header--home .content a {
     background-color: rgba(87, 174, 244, 0.15);
-    border-bottom: 1px solid #818298;
+    border-bottom: 2px solid #818298;
     color: inherit;
     padding: 0 5px 2px;
     text-decoration: none;
@@ -73,6 +73,13 @@
     background-color: rgba(87, 174, 244, 0.45);
 }
 
+.footer--home a {
+    color: $color-gray;
+}
+
+.footer--home a:hover {
+    color: $color-grayDark;
+}
 
 .projects--home {
     padding: 60px 0;

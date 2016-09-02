@@ -13,7 +13,7 @@ export default Ember.Route.extend({
              year: '2016 - ' + currentYear,
              type: 'Web App',
              route: 'home.project.raven',
-             description: 'A web app for lightening fast file transfers. ' +
+             description: 'A web app for lightning fast file transfers. ' +
                           'Upload files and share a download link that lasts ' +
                           '1 week.',
              skills: ['web', 'backend']
@@ -25,7 +25,7 @@ export default Ember.Route.extend({
              type: 'Web App',
              route: 'home.project.volleyy',
              description: 'A web app for sending beautiful email newsletters ' +
-                          'your readers love.',
+                          'your readers love to read.',
              skills: ['web', 'backend']
             },
             
@@ -79,8 +79,7 @@ export default Ember.Route.extend({
              type: 'Embedded System',
              route: 'home.project.easypay',
              description: 'An embedded systems project using NFC-enabled ' +
-                          'parking meters as payment kiosks for utilities and '+
-                          'of course parking.',
+                          'parking meters as payment kiosks for utilities.',
              skills: ['hardware']
             },
 
