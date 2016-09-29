@@ -11,7 +11,7 @@ module.exports = function(defaults) {
         fingerprint: {
             enabled: isProduction,
             extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'ico', 'svg',
-                         'json'],
+                         'json', 'pdf'],
             replaceExtensions: ['html', 'js', 'css', 'xml', 'json'],
             prepend: 'https://d38ghovo0vwqhb.cloudfront.net/'
         },

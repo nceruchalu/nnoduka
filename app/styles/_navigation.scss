@@ -23,7 +23,8 @@
  * Navbar defaults
  */
 .navbar {
-    background: #fff;
+    background-color: #34363f;
+    color: $color-whitesmoke;
     height: $height-nav;
     margin-bottom: 0;
 }
@@ -66,7 +67,7 @@
 }
 
 .navbar--project svg line {
-    stroke: $color-black;
+    stroke: $color-whitesmoke;
 }
 
 .navbar--project .project-index .svg-bottom,
@@ -142,6 +143,7 @@
 }
 
 .navbar--project .project-attr--text {
+    color: $color-whitesmoke;
     letter-spacing: 2px;
     margin: 0;
     padding: 6px 0 20px;

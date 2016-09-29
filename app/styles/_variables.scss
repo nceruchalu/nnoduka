@@ -18,6 +18,7 @@ $color-gray:                 #737373;
 $color-grayDark:             #47525d;
 $color-grayLight:            lighten($color-gray, 20%);
 $color-grayLighter:          lighten($color-grayLight, 10%);
+$color-whitesmoke:           rgba(255,255,255,0.75);
 
 $fontFamily-mono:            Consolas, Courier, monospace;
 
