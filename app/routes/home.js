@@ -8,6 +8,17 @@ export default Ember.Route.extend({
                 
         // Return the ordered collection of projects that have been worked on
         var projects = [
+            {title: 'RingPad',
+             snippet: 'VoIP Calls',
+             year: '2017 - ' + currentYear,
+             type: 'iOS',
+             route: 'home.project.ringpad',
+             description: 'An iOS app for cheap international calls ' +
+                          'initiated over the internet that terminate on ' +
+                          'your friends\' actual phones.',
+             skills: ['ios', 'backend']
+            },
+            
             {title: 'Raven',
              snippet: 'File Transfers',
              year: '2016 - ' + currentYear,
@@ -35,7 +46,7 @@ export default Ember.Route.extend({
              type: 'iOS',
              route: 'home.project.gravvy',
              description: 'An iOS app for collaborating with friends on '+
-                          'on videos. Share short clips with friends and '+
+                          'videos. Share short clips with friends and '+
                           'they\'ll respond with their own clips.',
              skills: ['ios', 'backend']
             },
@@ -67,7 +78,7 @@ export default Ember.Route.extend({
              year: '2014 - ' + currentYear,
              type: 'iOS',
              route: 'home.project.retrac',
-             description: 'An iOS app for that makes it easy to get back to ' +
+             description: 'An iOS app that makes it easy to get back to ' +
                           'any important location. Never look for your car '+
                           'again!',
              skills: ['ios']

@@ -25,6 +25,7 @@ Router.map(function() {
             this.route('easypay', { path: '/easypay' });
             this.route('noddymix', { path: '/noddymix' });
             this.route('radio', { path: '/radio' });
+            this.route('ringpad', { path: '/ringpad' });
             this.route('more', { path: '/more' });
         });
     });
