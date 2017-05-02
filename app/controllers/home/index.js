@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+    queryParams: ['skill'],
+    
     /**
      * Selected skill
      */
@@ -28,7 +30,7 @@ export default Ember.Controller.extend({
 
         if (!Ember.isBlank(skill)) {
             projects = projects.filter(function(project) {
-                return project.skills.contains(skill);
+                return project.skills.includes(skill);
             });
         }
         
@@ -46,7 +48,7 @@ export default Ember.Controller.extend({
             title = 'Web App ' + title;
 
         } else if (skill === 'backend') {
-            title = 'Web & Backend ' + title;
+            title = 'Backend ' + title;
 
         } else if (skill === 'hardware') {
             title = 'Hardware ' + title;

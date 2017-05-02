@@ -18,8 +18,10 @@
     <div class="tags">
       <button class="btn {{if skillIsIos 'is-active'}}"
               {{action "selectSkill" "ios"}}>iOS</button>
+      <button class="btn {{if skillIsWeb 'is-active'}}"
+              {{action "selectSkill" "web"}}>Web</button>
       <button class="btn {{if skillIsBackend 'is-active'}}"
-              {{action "selectSkill" "backend"}}>Web</button>
+              {{action "selectSkill" "backend"}}>Backend</button>
       <button class="btn {{if skillIshardware 'is-active'}}"
               {{action "selectSkill" "hardware"}}>Hardware</button>
     </div>
