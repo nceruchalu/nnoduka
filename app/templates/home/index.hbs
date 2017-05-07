@@ -1,20 +1,20 @@
 <header class="header header--home">
   <div class="container content">
-    <h2>WHO</h2>
-    <p>
+    <h5>WHO</h5>
+    <h1>
       <span class="highlight">Noddy Eruchalu</span> is an
       <span class="highlight">Engineer</span> with product management
       experience. He picked up his skills at Caltech
       {{#link-to "home.bio"}}
         and you can get his full story here.
       {{/link-to}}
-    </p>
+    </h1>
   </div>
 </header> <!-- /.header--home -->
 
 <section class="skills skills--home">
   <div class="container content">
-    <h2>SKILLS</h2>
+    <h5>SKILLS</h5>
     <div class="tags">
       <button class="btn {{if skillIsIos 'is-active'}}"
               {{action "selectSkill" "ios"}}>iOS</button>
@@ -30,12 +30,13 @@
 
 <section class="projects projects--home">
   <div class="container content">
-    <h2>
+    <h5 class="projects-heading {{if skill '' 'projects-heading--noskill'}}">
       {{projectsTitle}}
       {{#if skill}}
-        <button class="btn" {{action "deselectSkill"}}>[View All]</button>
+        <button class="btn" {{action "deselectSkill"}}>
+          [View All]</button>
       {{/if}}
-    </h2>
+    </h5>
     {{#each projects as |project|}}
       <div class="project">
         <h3 class="project-title">{{project.title}}</h3>

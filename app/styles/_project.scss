@@ -18,7 +18,7 @@
     clear: both;
     display: block;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: $maxWidth-content;
 }
 
 .container--project .details {
@@ -38,12 +38,8 @@
     width: 450px;
 }
 
-.container--project h1,
 .container--project h2,
-.container--project h3,
-.container--project h4,
-.container--project h5,
-.container--project h6 {
+.container--project h5 {
     color: $color-gray;
     font-size: $fontSize-base--header;
     font-weight: $fontWeight-bold;

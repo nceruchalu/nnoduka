@@ -28,6 +28,7 @@ $fontWeight-bold:            700;
 
 $fontSize-smaller:           12px;
 $fontSize-small:             13px;
+$fontSize-medium--small:     14px;
 $fontSize-base:              14px;
 $fontSize-large:             17px;
 $fontSize-larger:            21px;
@@ -40,6 +41,8 @@ $lineHeight-tight:           1.3333333 !default; // extra decimals for Win 8.1 C
 $lineHeight-base:            1.42857143 !default;
 $lineHeight-loose:           1.5 !default;
 $lineHeight-looser:          1.7 !default;
+
+$maxWidth-content:           600px;
 
 $padding-base--vertical:     6px !default;
 $padding-base--horizontal:   12px !default;

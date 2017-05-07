@@ -1,5 +1,4 @@
-/*jshint node:true*/
-/* global require, module */
+/* eslint-env node */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app'),
     environment = EmberApp.env(),
     isProduction = environment === 'production';

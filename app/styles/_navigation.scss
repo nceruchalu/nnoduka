@@ -111,6 +111,7 @@
     @include box-sizing(border-box);
     color: $color-black;
     display: inline;
+    font-size: $fontSize-medium--small;
     float: left;
     padding: 0 10px;
     width: 18.1818181818%;
@@ -189,6 +190,10 @@
     }
 }
 
+
+.footer {
+    font-size: $fontSize-medium--small;
+}
 
 /**
  * Project page footer

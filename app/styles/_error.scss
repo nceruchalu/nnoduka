@@ -23,22 +23,32 @@
     padding: 0 35px;  
 }
 
-.errorPage-details {
+.errorPage p,
+.errorPage h1,
+.errorPage h2,
+.errorPage h3,
+.errorPage h4,
+.errorPage h5,
+.errorPage h6 {
+    margin: 0;
+}
+
+.errorPage .errorPage-details {
     display: table-cell;
     vertical-align: middle; 
 }
 
-.errorPage-details a {
+.errorPage .errorPage-details a {
     color: $color-blue;
     text-decoration: none;
 }
 
-.errorPage-details a:hover,
-.errorPage-details a:hover {
+.errorPage .errorPage-details a:hover,
+.errorPage .errorPage-details a:hover {
     border-bottom: 1px dotted $color-blue;
 }
 
-.errorPage-icon {
+.errorPage .errorPage-icon {
     @include transform-style(preserve-3d);
     background-color:#d6d6d6;    
     color: #fff;
@@ -51,39 +61,39 @@
     vertical-align: middle;
 }
 
-.errorPage-code {
+.errorPage .errorPage-code {
     @include transform(translateY(-50%));
     position: absolute;    
     right: 10%;
     top: 50%;
 }
 
-.errorPage-content {
+.errorPage .errorPage-content {
     display: inline-block;
     position: relative;
     vertical-align: middle;
 }
 
-.errorPage-message {
+.errorPage .errorPage-message {
     color: $color-black;
     font-size: 32px;
     font-style: normal;
-    font-weight: $fontWeight-bold;
+    font-weight: $fontWeight-medium;
     line-height: 1.1;
     margin-bottom: 5px;
     text-rendering: optimizeLegibility;
 }
 
-.errorPage-message--small {
+.errorPage .errorPage-message--small {
     color: $color-gray;
     font-size: 18px;
-    font-weight: $fontWeight-medium;
+    font-weight: $fontWeight-normal;
     line-height: 1.5;
     margin-top: 5px;
 }
 
 @media (max-width:767px) {
-    .errorPage-icon {
+    .errorPage .errorPage-icon {
         display: block;
         height: 100px;
         font-size: 30px;
@@ -91,18 +101,22 @@
         margin-right: 0;
         width: 100px;
     }
-    .errorPage-content {
+    
+    .errorPage .errorPage-content {
         display: block;
     }
-    .errorPage-icon:before {
+    
+    .errorPage .errorPage-icon:before {
         font-size: 60px;
     }
-    .errorPage-message {
+    
+    .errorPage .errorPage-message {
         font-size: 24px;
         margin-left: 0;
         margin-top: 0;
     }
-    .errorPage-message--small {
+    
+    .errorPage .errorPage-message--small {
         font-size: 18px;
     }
 }
@@ -112,6 +126,7 @@
 .navbar--error {
     background: transparent;
     height: 65px;
+    z-index: $zIndex-5;
 }
 
 .navbar--error .navbar-logo {
@@ -122,7 +137,7 @@
     content: '';
     display: inline-block;
     height: 40px;
-    margin: 10px 0 0 1px;
+    margin: 12px 0 0 0;
     width: 40px;
     z-index: $zIndex-7;
 }

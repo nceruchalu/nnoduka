@@ -17,21 +17,21 @@
 .projects--home .content,
 .footer--home .content {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: $maxWidth-content;
 }
 
-.header--home .content h2,
-.skills--home .content h2,
-.projects--home .content h2 {
+.header--home .content h5,
+.skills--home .content h5,
+.projects--home .content h5 {
     color: $color-gray;
     font-size: $fontSize-smaller;
     font-weight: $fontWeight-normal;
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 
-.header--home .content p {
+.header--home .content h1 {
     color: $color-whitesmoke;
     font-size: $fontSize-larger;
     font-weight: $fontWeight-medium;
@@ -89,9 +89,12 @@
     background-color: #ffffff;
 }
 
-.projects--home .content h2 .btn {
+.projects--home .content .projects-heading--noskill {
+    padding: 7px 0;
+}
+
+.projects--home .content .projects-heading .btn {
     font-size: inherit;
-    padding: 0;
 }
 
 .projects--home .project + .project {
@@ -99,13 +102,13 @@
 }
 
 .projects--home .project-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: $fontWeight-bold;
 }
 
 .projects--home .project-year {
     color: $color-grayLight;
-    font-size: $fontSize-base;
+    font-size: $fontSize-medium--small;
     font-weight: $fontWeight-medium;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -128,7 +131,7 @@
         padding: 60px 0;
     }
     
-    .header--home .content p {
+    .header--home .content h1 {
         font-size: $fontSize-large;
     }
 
@@ -149,4 +152,3 @@
         font-size: $fontSize-smaller;
     }
 }
-
