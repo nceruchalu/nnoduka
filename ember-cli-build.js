@@ -9,7 +9,7 @@ module.exports = function(defaults) {
         // Ref: http://www.ember-cli.com/user-guide/#asset-compilation
         fingerprint: {
             enabled: isProduction,
-            extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'ico', 'svg',
+            extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg',
                          'json', 'pdf'],
             replaceExtensions: ['html', 'js', 'css', 'xml', 'json'],
             prepend: 'https://d38ghovo0vwqhb.cloudfront.net/'
